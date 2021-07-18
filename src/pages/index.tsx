@@ -42,7 +42,7 @@ export default function Home() {
               <MdMenu />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
-              Home
+              Demo Video Stream
             </Typography>
             <Button color="inherit">Login</Button>
           </Toolbar>
@@ -53,7 +53,7 @@ export default function Home() {
         <Stream
           className={styles.stream_component}
           controls
-          src="d7a2ffcf3c28d6b583d95f2c8efdf210"
+          src={process.env.NEXT_PUBLIC_VIDEO_ID}
           responsive
         />
       </Container>
